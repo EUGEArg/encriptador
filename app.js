@@ -51,7 +51,7 @@ function copiar() {
   document.execCommand("copy");
 }
 
-//validar Texto
+//validar Textoooo
 let valido = true;
 
 function validarInput() {
