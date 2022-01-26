@@ -11,8 +11,8 @@ body {
   padding-top: 20px;
   padding-bottom: 20px;
   margin-bottom: 10px;
-  background-color: #594170;
-  color: white;
+   background-image: linear-gradient(to right top, #283925, #355341, #416f62, #4f8b87, #61a8af, #67acb7, #6eb1be, #75b5c5, #6aa3ad, #619296, #588081, #4f6f6d);
+  color: black;
 }
 
 h1 {
@@ -30,7 +30,6 @@ h1 {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: center;
-  
 } 
 
 .btn-en-de {
@@ -39,8 +38,7 @@ h1 {
   flex-wrap: nowrap;
   justify-content: center;
   align-items: flex-start;
-  align-content: stretch
-
+  align-content: stretch;
 }
 
 button {
@@ -51,7 +49,11 @@ button {
  outline: none;
  margin: 15px;
  padding:0px 20px 0px 20px;
- 
+ color:#387E98 
+}
+
+#input-text, #output-text {
+  font-family: "Advent Pro", sans-serif;
 }
 
 #input-text, #output-text {
@@ -59,5 +61,4 @@ button {
     height: 50px;
     border-radius: 10px;
     outline: none;
-
 }
