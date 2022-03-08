@@ -28,15 +28,12 @@ body {
   color: black;
 }
 
-
-
-
 h1 {
   display: flex;
   justify-content: center;
 }
 
-#box-padre {
+.box-container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -44,51 +41,33 @@ h1 {
 
 .box-uno,
 .box-dos {
-  width: 60vw;
+  width: 50vw;
   padding: 20px;
   margin: 20px;
   border-radius: 20px;
-  box-shadow: 30px 5px 150px 50px #231b2b;
+  box-shadow: 15px 5px 50px 10px #231b2b;
   display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
   align-items: center;
-  align-content: stretch;
 }
 
 .btn-en-de {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
   justify-content: center;
-  align-items: flex-start;
-  align-content: stretch;
-}
-
-@media(max-width: 600px) {
-
- .btn-en-de {
-  display: flex;
-  flex-direction: column;
- }
-
- textarea {
-   width: 80%;
-   max-width: 100%;
- }
- 
 }
 
 button {
-  font-size: 20px;
+  font-size: 25px;
   margin-top: 30px;
   margin-bottom: 30px;
   border-radius: 5px;
+  border-style: none;
   outline: none;
   margin: 15px;
   padding: 0px 20px 0px 20px;
   color: #387e98;
+  background: white;
 }
 
 #input-text,
@@ -109,5 +88,20 @@ footer {
   color: white;
   justify-content: center;
   text-align: center;
-  
+}
+
+@media (max-width: 768px) {
+  .btn-en-de {
+    display: flex;
+    flex-direction: column;
+  }
+
+  textarea {
+    width: 80%;
+    max-width: 100%;
+  }
+
+  body{
+    margin: 0;
+  }
 }
