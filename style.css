@@ -6,10 +6,8 @@ button {
 }
 
 body {
-  width: 100%;
-  height: auto;
-  padding-top: 20px 0px 10px 0px;
-  margin-bottom: 10px;
+  height: 100vh;
+  overflow: hidden;
   background-image: linear-gradient(
     to right top,
     #283925,
@@ -29,14 +27,16 @@ body {
 }
 
 h1 {
-  display: flex;
-  justify-content: center;
+  font-size: 40px;
+  padding: 30px;
 }
 
 .box-container {
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
+  height: 95vh;
 }
 
 .box-uno,
@@ -45,7 +45,7 @@ h1 {
   padding: 20px;
   margin: 20px;
   border-radius: 20px;
-  box-shadow: 15px 5px 50px 10px #231b2b;
+  box-shadow: 5px 5px 50px 5px #231b2b;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,6 +91,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+  h1{
+padding: 0;
+  }
+
   .btn-en-de {
     display: flex;
     flex-direction: column;
